@@ -1,12 +1,12 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, inject, OnInit } from '@angular/core';
-import { Recipe } from '../../model/recipe.model';
 import { RecipesService } from './recipes.service';
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-recipes',
   standalone: true,
-  imports: [],
+  imports: [MatCardModule, MatButtonModule],
   templateUrl: './recipes.component.html',
   styleUrl: './recipes.component.scss'
 })
