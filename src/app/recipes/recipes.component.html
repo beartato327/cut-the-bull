@@ -1,5 +1,10 @@
 <div class="flex flex-row flex-wrap justify-center">
-  @for(recipe of recipes; track recipe.id){
+  @for(recipe of recipes(); track recipe){
+    <h1>{{recipe.id}}</h1>
+    <h2>{{recipe.serving_size}}</h2>
+    <p (click)="deleteRecipe(recipe.id)">delete recipe</p>
+  }
+  <!-- @for(recipe of recipes; track recipe.id){
   <div class="flex mx-4 mt-8">
     <mat-card class="max-w-md" appearance="outlined">
       <mat-card-header>
@@ -52,5 +57,5 @@
       </mat-card-actions>
     </mat-card>
   </div>
-  }
+  } -->
 </div>

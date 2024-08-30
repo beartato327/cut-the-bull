@@ -15,13 +15,13 @@ export class HeaderComponent implements OnInit {
   name: string = '';
 
   ngOnInit(): void {
-    this.getUser();
-  }
+/*     this.getUser();
+ */  }
 
   getUser() {
-    this.headerService.getUser().subscribe((user) => {
+/*     this.headerService.getUser().subscribe((user) => {
       this.name = user[0].name;
       console.log(this.name);
-    });
+    }); */
   }
 }

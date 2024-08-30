@@ -7,10 +7,10 @@ import { User } from "../../model/user.model";
 })
 export class HeaderService {
 
-    private userUrl = 'api/users';
+   /*  private userUrl = 'api/users';
     private http = inject(HttpClient);
     
     getUser(){
         return this.http.get<User[]>(this.userUrl);
-    }
+    } */
 }
